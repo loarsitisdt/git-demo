@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>
+    </title>
+    <style>
+        .filename{
+            color:red;
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="hello.php" method="post">
+        <label class ="filename">用户名:</label>
+        <input type="text" name="username" value="" />
+        <br />
+        <label>密码: </label>
+        <input type="text" name="password" value="" />
+        <br>
+
+        <input type="radio" name="ty" value="男" /><label>男</label>
+        <input type="radio" name="ty" value="女" /><label>女</label>
+        <br />
+
+        <label>选择您所在的城市</label>
+        <input type="checkbox" name="city[]" value="北京" /><label>北京</label>
+        <input type="checkbox" name="city[]" value="南京" /><label>南京</label>
+        <input type="checkbox" name="city[]" value="邢台" /><label>邢台</label>
+        <br />
+        <select name="tiyu" value="">
+            <option value="篮球">篮球</option>
+            <option value="足球">足球</option>
+            <option value="台球">台球</option>
+            <option value="乒乓球">乒乓球</option>
+            <option value="地球">地球</option>
+        </select>
+        <br />
+
+        <input type="submit" name="sub" value="提交" />
+        <br />
+    </form>
+
+</body>
+</html>

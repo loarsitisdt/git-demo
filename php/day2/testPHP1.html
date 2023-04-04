@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        form{
+            width: 300px;
+            height: 200px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <form action="testPhP1.php" method="post">
+        <label>姓名:</label><input type="text" value="" name="username"/>
+        <br/>
+        <label>出生日期:</label><input type="text" value="" name="userday"/>
+        <br/>
+        <label>年龄:</label><input type="text" value="" name="userage"/>
+        <br/>
+        <label>学科:</label><input type="text" value="" name="usersubject"/>
+        <br/>
+        <label>学号:</label><input type="text" value="" name="userstudent"/>
+        <br/>
+        星座:<select name="userclass">
+            <option value="shizi">狮子座</option>
+            <option value="baiyang">白羊座</option>
+            <option value="shaungzi">双子座</option>
+            <option value="jinniu">金牛座</option>
+            <option value="tianping">天枰座</option>
+            <option value="shuiping">水瓶座</option>
+            <option value="juxie">巨蟹座</option>
+            <option value="shuangyu">双鱼座</option>
+            <option value="mojie">魔羯座</option>
+            <option value="sheshou">射手座</option>
+            <option value="chunv">处女座</option>
+            <option value="tianxie">天蝎座</option>
+        </select>
+        <input type="submit" name="sub" value="提交"/>
+    </form>
+</body>
+</html>

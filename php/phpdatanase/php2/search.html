@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>
+    </title>
+    <style>
+    
+        
+    </style>
+</head>
+<body>
+
+    <form action = "serch.php" method = "post">
+        <label>请输入要搜索的内容:</label>
+        <input type="text" name="search" value="">
+        <input type="submit" name="sub" value="搜索">
+
+        <br><br>
+        </form>
+    <table border="1" width="800px">
+        <tr>
+            <th>序号</th>
+            <th>标题</th>
+            <th>内容</th>
+            <th>时间</th>
+        </tr>
+
+        <?php foreach($data as $value){ ?>
+            <tr>
+                <td><?=$value[0]?></td>
+                <td><?=$value[1]?></td>
+                <td><?=$value[2]?></td>
+                <td><?=$value[3]?></td>
+            </tr>
+        <?php }?>
+    </table>
+
+</body>
+</html>

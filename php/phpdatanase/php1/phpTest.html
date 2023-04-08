@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>
+    </title>
+    <style>
+    
+        
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+
+        <?php foreach($arr as $value){ ?>
+
+            <tr>
+                <td><?=$value[0]?></td>
+                <td><?=$value[1]?></td>
+                <td><?=$value[2]?></td>
+                <td><?=$value[3]?></td>
+            </tr>
+        <?php }?>
+    </table>
+
+    <ul>
+        <?php foreach($arr as $value) { ?>
+
+        <li><?=$value[0]?></li>
+        <li><?=$value[1]?></li>
+        <li><?=$value[2]?></li>
+        <li><?=$value[3]?></li>
+
+        <?php }?>
+    </ul>
+</body>
+</html>
